@@ -1,1 +1,0 @@
-# Rytas-Ir-Vakaras
