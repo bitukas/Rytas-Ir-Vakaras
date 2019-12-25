@@ -1,43 +1,15 @@
-<!--
-   TipOfTheDay.html
-   
-   Copyright 2017 root <root@nojus-is-cool>
-   
-   This program is free software; you can redistribute it and/or modify
-   it under the terms of the GNU General Public License as published by
-   the Free Software Foundation; either version 2 of the License, or
-   (at your option) any later version.
-   
-   This program is distributed in the hope that it will be useful,
-   but WITHOUT ANY WARRANTY; without even the implied warranty of
-   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-   GNU General Public License for more details.
-   
-   You should have received a copy of the GNU General Public License
-   along with this program; if not, write to the Free Software
-   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
-   MA 02110-1301, USA.
-   
-   
--->
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-
+<!DOCTYPE html>
+<html lang="en" >
 <head>
-	<title>Rytas Ir Vakaras</title>
-	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
-	<meta name="generator" content="Geany 1.27" />
+  <meta charset="UTF-8">
+  <title>Rytas Ir Vakaras</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
 </head>
-
 <body>
 	<script src="js/dateDetect.js"></script>
-	<button onclick="document.getElementById('remote').src=tip"><img src="img/refresh.png"><br>refresh text</button>
-	<button onclick="previ(); document.getElementById('remote').src=tip"><img src="img/prev.png"><br>previous day</button>
-	<button onclick="reset(); document.getElementById('remote').src=tip"><img src="img/now.png"><br>this day</button>
-	<button onclick="nexti(); document.getElementById('remote').src=tip"><img src="img/next.png"><br>next day</button>
-	<script>document.write(tiptitle)</script><br>
+	<button onclick="previ(); document.getElementById('remote').src=tip"><i class="fa fa-arrow-left"><br>previous day</button>
+	<button onclick="reset(); document.getElementById('remote').src=tip"><i class="fa fa-home"><br>this day</button>
+	<button onclick="nexti(); document.getElementById('remote').src=tip"><i class="fa fa-arrow-right"><br>next day</button><script>document.write(tiptitle)</script><br>
 	<!--<div id="remote" w3-include-html="none.html"></div>-->
 	<iframe id="remote" src="none.html" width=900 height=1000></iframe><br>
 	<script>document.getElementById('remote').src=tip</script>
