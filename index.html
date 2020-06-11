@@ -7,9 +7,12 @@
 </head>
 <body>
 	<script src="js/dateDetect.js"></script>
-	<button onclick="previ(); document.getElementById('remote').src=tip"><i class="fa fa-arrow-left"><br>previous day</button>
-	<button onclick="reset(); document.getElementById('remote').src=tip"><i class="fa fa-home"><br>this day</button>
-	<button onclick="nexti(); document.getElementById('remote').src=tip"><i class="fa fa-arrow-right"><br>next day</button><script>document.write(tiptitle)</script><br>
+	
+	<button onclick="previ(); document.getElementById('remote').src=tip"><i class="fa fa-arrow-left"></i></button>
+	<button onclick="reset(); document.getElementById('remote').src=tip"><i class="fa fa-home"></i></button>
+	<button onclick="nexti(); document.getElementById('remote').src=tip"><i class="fa fa-arrow-right"></i></button>
+
+	<script>document.write(tiptitle)</script><br>
 	<!--<div id="remote" w3-include-html="none.html"></div>-->
 	<iframe id="remote" src="none.html" width=900 height=1000></iframe><br>
 	<script>document.getElementById('remote').src=tip</script>
