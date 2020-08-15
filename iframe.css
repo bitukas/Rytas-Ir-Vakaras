@@ -1,6 +1,10 @@
 #knyga{
   display: flex;
 }
+#rytas{
+}
+#vakaras{
+}
 .puslapis{
   display: flex;
   width: 50%;
@@ -13,8 +17,10 @@
   justify-content: space-around;
 }
 .citata{
-  width: 50%;
+  width: 70%;
+  text-align: center;
 }
 .turinys{
-  width: 75%;
+  width: 90%;
+  text-align: center;
 }
