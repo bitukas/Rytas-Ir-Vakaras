@@ -55,7 +55,7 @@ async function ikelti() {
   document.getElementById("knyga").style.display = "none";
   document.getElementById("knyga-alt").style.display = "none";
   const turinioUrl =
-    "https://raw.githubusercontent.com/bitukas/Rytas-Ir-Vakaras/access-via-json/json";
+    "https://bitukas.github.io/Rytas-Ir-Vakaras/json";
   //https://bitukas.github.io/Rytas-Ir-Vakaras/json/
   const turinioUrlAlt = "https://bitukas.github.io/Rytas-Ir-Vakaras";
 
