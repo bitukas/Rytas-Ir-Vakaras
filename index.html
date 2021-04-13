@@ -2,20 +2,53 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>Rytas Ir Vakaras</title>
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+  <title>CodePen - riv css json reader</title>
+  <link rel="stylesheet" href="./style.css">
+
 </head>
 <body>
-	<script src="js/dateDetect.js"></script>
-	
-	<button onclick="previ(); document.getElementById('remote').src=tip"><i class="fa fa-arrow-left"></i></button>
-	<button onclick="reset(); document.getElementById('remote').src=tip"><i class="fa fa-home"></i></button>
-	<button onclick="nexti(); document.getElementById('remote').src=tip"><i class="fa fa-arrow-right"></i></button>
+<!-- partial:index.partial.html -->
+<input type="date" id="dienSel">
+<button onclick="ikelti()">atidaryti</button><br>
 
-	<script>document.write(tiptitle)</script><br>
-	<!--<div id="remote" w3-include-html="none.html"></div>-->
-	<iframe id="remote" src="none.html" width=900 height=1000></iframe><br>
-	<script>document.getElementById('remote').src=tip</script>
+<div id="knyga" style="display: none">
+  <div class="puslapis" id="rytas">
+    <div class="laikas">
+      <div class="data">
+        <p>Gruodzio 25</p>
+      </div>
+      <div class="metas">
+        <p>Rytas</p>
+      </div>
+    </div>
+    <div class="citata">
+      <p>citatai</p>
+    </div>
+    <div class="turinys">
+      <p>turinys</p>
+    </div>
+  </div>
+  <div class="puslapis" id="vakaras">
+    <div class="laikas">
+      <div class="data">
+        <p>Gruodzio 25</p>
+      </div>
+      <div class="metas">
+        <p>Vakaras</p>
+      </div>
+    </div>
+    <div class="citata">
+      <p>citata</p>
+    </div>
+    <div class="turinys">
+      <p>turinys</p>
+    </div>
+  </div>
+</div><br>
+
+<iframe id="knyga-alt" width=900 height=1000 style="display:none"></iframe>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
 </body>
-
 </html>
