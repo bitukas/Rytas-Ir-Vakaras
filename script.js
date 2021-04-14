@@ -57,7 +57,7 @@ async function ikelti() {
   const turinioUrl =
     "https://bitukas.github.io/Rytas-Ir-Vakaras/json";
   //https://bitukas.github.io/Rytas-Ir-Vakaras/json/
-  const turinioUrlAlt = "https://bitukas.github.io/Rytas-Ir-Vakaras";
+  const turinioUrlAlt = "https://bitukas.github.io/Rytas-Ir-Vakaras/html";
 
   let men = document.getElementById("dienSel").value.substring(5, 7);
 
