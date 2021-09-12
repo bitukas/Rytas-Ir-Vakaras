@@ -7,6 +7,11 @@ function paruostiDienosSelektoriu(elem) {
   if (dt1 < 10) dt1 = "0" + dt1;
   var d2 = y1 + "-" + m1 + "-" + dt1;
   elem.value = d2;
+
+  const urlParams = new URLSearchParams(window.location.search);
+  if (urlParams.has("debug") && urlParams.get("debug") == "yes") {
+    document.getElementById("sel").style["display"] = "block";
+  }
 }
 
 async function gautiJSON(url) {
